@@ -1,3 +1,9 @@
+.inter-tight-<uniquifier> {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 *{
-    font-family: Inter Tight, sans-serif;
+    font-family: ubuntu, sans-serif;
 }

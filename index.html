@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="min-h-screen bg-base-100">
     <header class="w-[80%] mx-auto">
@@ -38,20 +42,20 @@
     <main class="w-[80%] mx-auto">
         <div class="tabs tabs-boxed gap-2">
             <button id="all-filter-btn" class=" btn btn-active btn-primary px-5 py-3">All</button>
-            <button id="interview-filter-btn" class=" btn btn-active btn-primary px-5 py-3">Interview</button>
-            <button id="rejected-filter-btn" class=" btn btn-active btn-primary px-5 py-3">Rejected</button>
+            <button id="interview-filter-btn" class=" btn btn-ghost px-5 py-3">Interview</button>
+            <button id="rejected-filter-btn" class=" btn btn-ghost px-5 py-3">Rejected</button>
         </div>
     </main>
 
     <section id="jobs" class="w-[80%] mx-auto py-5 space-y-6">
-      <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
+      <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="not-applied">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">Technova Solutions</h3>
+          <p class="text-sm text-gray-500 mt-1">Frontend Developer</p>
+          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $90,000 - $110,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Develop modern, responsive web applications using React and Tailwind CSS. Collaborate with UI/UX designers to build pixel-perfect interfaces and optimize performance for high-traffic platforms.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -65,12 +69,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">CloudSphere Inc.</h3>
+          <p class="text-sm text-gray-500 mt-1">Backend Developer</p>
+          <p class="text-sm text-gray-600 mt-1">Hybrid • Full-time • $100,000 - $125,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Design and maintain scalable RESTful APIs using Node.js and Express. Work with databases like MongoDB and PostgreSQL to build secure and high-performance backend systems.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -84,12 +88,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">FinEdge Technologies</h3>
+          <p class="text-sm text-gray-500 mt-1">Junior Software Engineer</p>
+          <p class="text-sm text-gray-600 mt-1">On-Site • Full-time • $70,000 - $90,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Assist in developing fintech applications, write clean and maintainable code, and participate in code reviews. Ideal for fresh graduates passionate about software development.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -103,12 +107,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">PixelCraft Studio</h3>
+          <p class="text-sm text-gray-500 mt-1">UI/UX Designer</p>
+          <p class="text-sm text-gray-600 mt-1">Remote • Contract • $60/hour</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Create user-centered designs for web and mobile applications. Develop wireframes, prototypes, and interactive mockups using Figma and Adobe XD.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -122,12 +126,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">DataWave Analytics</h3>
+          <p class="text-sm text-gray-500 mt-1">Data Analyst</p>
+          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $80,000 - $100,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Analyze large datasets to uncover business insights. Build dashboards using Power BI or Tableau and generate reports to support strategic decision-making.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -141,12 +145,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">SecureNet Systems</h3>
+          <p class="text-sm text-gray-500 mt-1">Cybersecurity Specialist</p>
+          <p class="text-sm text-gray-600 mt-1">Hybrid • Full-time • $110,000 - $140,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Monitor network security, perform vulnerability assessments, and implement security protocols to protect organizational infrastructure from cyber threats.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -160,12 +164,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">AppVenture Labs</h3>
+          <p class="text-sm text-gray-500 mt-1">Flutter Developer</p>
+          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $85,000 - $105,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using Flutter and Dart. Collaborate with backend teams to integrate APIs and ensure smooth app performance.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -179,12 +183,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
+          <h3 class="text-lg font-bold text-primary">AI Core Innovations</h3>
+          <p class="text-sm text-gray-500 mt-1">Machine Learning Engineer</p>
           <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Develop and deploy machine learning models for predictive analytics. Work with Python, TensorFlow, and large datasets to improve AI-driven products.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>
@@ -198,12 +202,12 @@
 
       <div class="bg-base-200 rounded-2xl relative job-card shadow p-6 flex item-start " data-status="all">
         <div>
-          <h3 class="text-lg font-bold text-primary">Mobile First Corp.</h3>
-          <p class="text-sm text-gray-500 mt-1">React Native Developer</p>
-          <p class="text-sm text-gray-600 mt-1">Remote • Full-time • $130,000 - $150,000</p>
+          <h3 class="text-lg font-bold text-primary">DevOpsify Ltd.</h3>
+          <p class="text-sm text-gray-500 mt-1">DevOps Engineer</p>
+          <p class="text-sm text-gray-600 mt-1">Hybrid • Full-time • $105,000 - $130,000</p>
 
           <span class="px-3 py-1 text-xs rounded-md bg-blue-100 text-blue-600 font-medium status-badge mt-3">NOT APPLIED</span>
-          <p class="text-sm text-gray-600 mt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <p class="text-sm text-gray-600 mt-3">Manage CI/CD pipelines, automate deployments, and maintain cloud infrastructure using AWS and Docker to ensure smooth development workflows.</p>
           <div class="mt-6 flex gap-3">
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-primary interview-btn">INTERVIEW</button>
             <button class="px-4 py-2 text-sm rounded-md btn btn-outline btn-secondary rejected-btn"> REJECTED</button>

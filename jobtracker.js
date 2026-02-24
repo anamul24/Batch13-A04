@@ -47,7 +47,7 @@ function setStatus(jobCard,status){
         badge.className= 'px-3 py-1 text-xs rounded-md bg-red-100 text-red-600 font-medium status-badge mt-3';  
     }
     else{
-        jobCard.dataset.status= 'all';
+        jobCard.dataset.status= 'not-applied';
         badge.textContent='NOT APPLIED';
         badge.className= 'px-3 py-1 text-xs rounded-md bg-red-100 text-red-600 font-medium status-badge mt-3'; 
     }
@@ -71,6 +71,28 @@ function filterJobs(filter){
     updateCounts();
     setActiveTab(filter);
 }
+function setActiveTab(filter){
+    
+    const buttons=[allFilterBtn, interviewFilterBtn,rejectedFilterBtn];
+    buttons.forEach(btn=>{
+        btn.classList.remove('btn-primary','btn-active');
+        btn.classList.add('btn-ghost');
+    });
+    
+    
+    if(filter==='all'){
+        allFilterBtn.classList.remove('btn-ghost');
+        allFilterBtn.classList.add('btn-primary','btn-active');
+    }
+    else if(filter==='interview'){
+        interviewFilterBtn.classList.remove('btn-active');
+        interviewFilterBtn.classList.add('btn-primary','btn-active');
+    }
+    else if(filter=== 'rejected'){
+        rejectedFilterBtn.classList.remove('btn-active');
+        rejectedFilterBtn.classList.add('btn-primary','btn-active');
+    }
+}
 
 function addEventListener(){
     const jobCards = getJobCards();
@@ -80,6 +102,7 @@ function addEventListener(){
         card.querySelector('.delete-btn').onclick = () =>{
             card.remove();
             updateCounts();
+            filterJobs(activeFilter);
         };
     });
 }
